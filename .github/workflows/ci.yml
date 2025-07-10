@@ -3,7 +3,7 @@ name: "CI (Integração Contínua): Main Workflow"
 on:
     pull_request:
         types: [opened, synchronize]
-        
+
 jobs:
     linter:
         run-on: ubuntu-latest
@@ -11,4 +11,4 @@ jobs:
             - uses: actions/checkout@v4
 
             - name: Run linter
-                run: yarn lint
+              run: yarn lint
