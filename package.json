@@ -5,6 +5,7 @@
   "author": "Mario Souto <13791385+omariosouto@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "caniuse-lite": "^1.0.30001727",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
@@ -14,7 +15,8 @@
     "build": "rm -rf build && next export && mv ./out ./build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "deploy": ""
   },
   "devDependencies": {
     "eslint": "8.17.0",
