@@ -10,5 +10,8 @@ jobs:
         steps: 
             - uses: actions/checkout@v4
 
+            - name: Install Dependencies
+              run: yarn install
+
             - name: Run linter
               run: yarn lint
