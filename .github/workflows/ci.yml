@@ -9,5 +9,5 @@ on:
             steps: 
                 - uses: actions/checkout@v4
 
-                - name: Tun linter
+                - name: Run linter
                   run: yarn lint
