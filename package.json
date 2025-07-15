@@ -7,6 +7,7 @@
   "dependencies": {
     "caniuse-lite": "^1.0.30001727",
     "next": "^12.1.6",
+    "node-fetch": "^3.3.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
@@ -16,7 +17,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "deploy:prod": "yarn build && vercel ./build --yes --token=$VERCEL_TOKEN --prod"
+    "deploy:prod": "yarn deploy:staging --prod",
+    "deploy:staging": "yarn build && vercel ./build --yes --token=$VERCEL_TOKEN",
+    "deploy:preview": "node ./scripts/pullRequestPreview.js"
   },
   "devDependencies": {
     "eslint": "8.17.0",
