@@ -18,5 +18,8 @@ jobs:
             - name: Install Dependencies
               run: yarn install
 
+            - name: Install Vercel CLI
+              run: npm install -g vercel
+
             - name: Run Deploy
               run: yarn deploy:prod
